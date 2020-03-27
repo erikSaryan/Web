@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="ru">
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+<script>
+    $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide();
+    });
+    //Функция отображения PopUp
+    $("html").mouseleave(function(){
+        $("#popup1").show();
+    });
+    $("html").mousemove(function(){
+        $("#popup1").hide();
+    });
+</script>
+</head>
+<body>
+    <div class="b-container">
+        Sample Text
+    </div>
+    <div class="b-popup" id="popup1">
+        <div class="b-popup-content">
+            Text in Popup
+        </div>
+    </div>
+</body>
+</html>
